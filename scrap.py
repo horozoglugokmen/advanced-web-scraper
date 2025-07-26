@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 =====================================
-HYBRID BATCH SCRAPER SYSTEM
+Advanced web scraper system - Anti-detection, batch processing and intelligent risk management
 =====================================
 """
 
@@ -26,14 +26,14 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('hybrid_batch_scraper.log'),
+        logging.FileHandler('advanced_web_scraper.log'),
         logging.StreamHandler()
     ]
 )
 logger = logging.getLogger(__name__)
 
 # ================================
-# HYBRID BATCH SCRAPER
+# ADVANCED WEB SCRAPER SYSTEM
 # ================================
 
 class HybridBatchScraper:
@@ -624,7 +624,7 @@ class HybridBatchScraper:
 
 def main():
     """Main function"""
-    print("Hybrid Batch Scraper System")
+    print("Advanced Web Scraper System")
     print("=" * 50)
     
     scraper = HybridBatchScraper()
