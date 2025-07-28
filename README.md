@@ -1,6 +1,8 @@
-# Advanced Web Scraper System
+# Real Estate Web Scraper System
 
-Professional web scraping framework with intelligent risk management and anti-detection capabilities.
+Professional real estate data collection framework with intelligent risk management and anti-detection capabilities.
+
+Specialized for scraping property listings from real estate websites with advanced security features and batch processing.
 
 ## Features
 
@@ -17,11 +19,12 @@ Professional web scraping framework with intelligent risk management and anti-de
 - Daily page limits (50 pages max)
 - Automatic health checks
 
-**Batch Processing**
-- Smart batch processing (10 pages per batch)
+**Real Estate Data Processing**
+- Smart batch processing (10 property pages per batch)
+- Property data extraction (title, price, location, rooms, area, etc.)
 - Progress tracking with JSON persistence
-- Automatic duplicate removal
-- CSV export with proper encoding
+- Automatic duplicate property removal
+- CSV export with proper encoding for real estate data
 
 ## Quick Start
 
@@ -49,8 +52,8 @@ python scrap.py
 ## Output Files
 
 - `advanced_web_scraper.log` - System logs
-- `total_scrap.csv` - Scraped data
-- `batch_progress.json` - Progress tracking
+- `total_scrap.csv` - Scraped real estate property data
+- `batch_progress.json` - Scraping progress tracking
 
 ## Legal Notice
 

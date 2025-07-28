@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 =====================================
-Advanced web scraper system - Anti-detection, batch processing and intelligent risk management
+REAL ESTATE WEB SCRAPER SYSTEM
+Advanced real estate data collection with anti-detection, batch processing and intelligent risk management
 =====================================
 """
 
@@ -609,22 +610,22 @@ class HybridBatchScraper:
         """Show final statistics"""
         final_df = self.load_existing_data()
         
-        print(f"\nHYBRID BATCH SCRAPER REPORT")
+        print(f"\nREAL ESTATE SCRAPER REPORT")
         print(f"=" * 50)
         print(f"Pages scraped this session: {self.stats['successful_pages']}")
-        print(f"Listings found this session: {self.stats['total_listings']}")
+        print(f"Property listings found this session: {self.stats['total_listings']}")
         print(f"Success rate: {self.calculate_success_rate():.1f}%")
         print(f"Average response time: {self.stats['avg_response_time']:.2f} seconds")
         
         if not final_df.empty:
-            print(f"\nTOTAL STATISTICS:")
-            print(f"   Total listings: {len(final_df)}")
+            print(f"\nTOTAL REAL ESTATE DATA:")
+            print(f"   Total property listings: {len(final_df)}")
             print(f"   Most common location: {final_df['location'].value_counts().index[0] if not final_df['location'].empty else 'N/A'}")
             print(f"   Most common room type: {final_df['room_count'].value_counts().index[0] if not final_df['room_count'].empty else 'N/A'}")
 
 def main():
     """Main function"""
-    print("Advanced Web Scraper System")
+    print("Real Estate Web Scraper System")
     print("=" * 50)
     
     scraper = HybridBatchScraper()
